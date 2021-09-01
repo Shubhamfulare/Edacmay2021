@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban</title>
+
+
+    <link rel="stylesheet" href="Urban.css">
+    <div class="logo">
+        <img src="Logo.PNG" width="84%">
+
+    </div>
+
+
+</head>
+<script srcf="pro.js"></script>
+
+
+<div class="menu">
+    <nav class="navbar">
+        <ul>
+            <li><a href="home">Home </a></li>
+            <li><a href="Onlineclasses">Online classes</a></li>
+            <li><a href="courses">Courses</a></li>
+            <li><a href="Exam">Exam Coaching</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+
+
+<div class="theme">
+    <h1>Urban-Pro find tutor or student</h1>
+</div>
+
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div>
+        <img class="background" src="back1.jpg" width="100%">
+
+    </div>
+
+    <div class="pencil">
+        <img src="back2.jpg" height="90%">
+    </div>
+
+
+    <form class="form">
+
+        <div class="log">
+            <br>
+            <select id="User" class="option">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+        </select>
+
+        </div>
+
+        <div class="log">
+            <input type="text" href="#" placeholder="UserId">
+
+        </div>
+
+        <div class="log">
+            <input type="text" href="#" placeholder="Paaword">
+        </div>
+
+        <div class="log">
+
+            <input type="button" value="Login">
+            <br>
+        </div>
+
+        <div>
+            <button id="button" type="button">Sign Up</button>
+        </div>
+
+        <form id=" form1 " class="signup" onclick="return validation()">
+
+            <div class="d1">
+                <input type="text " id="fname" placeholder="First name " required>
+            </div>
+            <div class="d1">
+                <input type="text " placeholder="Last name " required>
+            </div>
+            <div class="d1">
+                <input type="text " placeholder="password " required>
+            </div>
+            <div class="d1">
+                <input type="text " placeholder="Cofirm password " required>
+            </div>
+            <div class="d1">
+                <input type="text " placeholder="Email " required>
+            </div>
+            <div class="d1">
+                <input type="text " placeholder="Mobile no" required>
+            </div>
+
+            <button type="button" onclick="validation()">Submit</button>
+        </form>
+
+    </form>
+
+    <script>
+        validation() {
+            let x = document.getElementById("fname").value;
+            if (X = "")
+                Document.getElementById("erro").innerHtml = "Invaild input"
+        } < p > id = "error" < /p>
+    </script>
+    <!-- <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".d1").slideToggle(1000);
+            });
+        });
+    </script> -->
+
+    <div>
+        <img class="learning " src="learn.jpeg " width="300px ">
+    </div>
+
+
+
+
+</body>
+
+</html>

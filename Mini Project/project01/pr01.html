@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pr.css">
+    <script src="pro.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- --------------------head-------------------- -->
+<div class="container-fluid-md">
+    <div class="container-fluid-md">
+        <div class="row">
+            
+            <div class="col-md-12 text-center">
+                <h1 class="head" style="font-family: cursive; padding-top: 25px;">Urban-Pro Find Tutor Or Student</h1>
+            </div>
+        </div>
+
+
+
+        <!-- ---------------nav bar------------------ -->
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-dark">
+           
+             
+            <div class="topnav" class="container-fluid">
+                <a class="active" href="#home">Home</a>
+                <a href="#Online classes">Online classes</a>
+                <a href="#courses">Courses</a>
+                <a href="file:///C:/Users/Shubham/Desktop/juhu/project/mini/project01/pr02.html">Success Stories</a>
+                <a href="file:///C:/Users/Shubham/Desktop/juhu/project/mini/project01/contact.html">Contact Us</a>
+                <a href="file:///C:/Users/Shubham/Desktop/juhu/project/mini/project01/contact.html">About Us</a>
+              </div>
+        
+          </div>
+
+
+
+          <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                
+                window.addEventListener('scroll', function() {
+                   
+                    if (window.scrollY > 200) {
+                        document.getElementById('navbar_top').classList.add('fixed-top');
+                        // add padding top to show content behind navbar
+                        navbar_height = document.querySelector('.navbar').offsetHeight;
+                        document.body.style.paddingTop = navbar_height + 'px';
+                    } else {
+                         document.getElementById('navbar_top').classList.remove('fixed-top');
+                         // remove padding top from body
+                        document.body.style.paddingTop = '0';
+                    } 
+                });
+            }); 
+            // DOMContentLoaded  end
+        </script>
+        <!-- ---------------------------log in----------------- -->
+        
+        
+            <div class="row-cols-sm-12 img-fluid" style="background-image: url(learn.jpeg);background-position: 35% 8%;  min-height: 700px;width:100%; background-repeat:no-repeat">
+       
+            
+
+                <div class="col-md-8"></div>
+                    <div class="col-md-4 login float-md-end">
+                            <P class="text-center"><b style="color: white;font-size: large; ">LOG IN</b></P>
+                        <select class="form-control-sm" >
+                            <option selected>Select option</option>
+                            <option value="1">Student</option>
+                            <option value="2">Teacher</option>
+                        </select>
+                    <br>
+                    <br>
+                    <input class="form-control" type="text" placeholder="Username"><br>
+                    <input class="form-control" type="text" placeholder="Password"><br>
+                    <button type="button" class="btn btn-primary" style="background-color: blue; ">Log In</button><br>
+                    <br>
+                    <p style="color:white;">Don't have an account ?
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Sign Up
+                          </button>
+                    </p>
+                    <br>
+
+                </div>
+            </div>
+             
+
+
+
+
+
+            <
+
+               
+        
+        <!-- ------------------------form------------------------- -->
+    
+        <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-image: linear-gradient(#c8f3e0, #39f5a3);">     
+        <div class="modal-header">
+          <h5 class="modal-title ml-auto" id="staticBackdropLabel"><b>Register Here</b> </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row m-auto">
+                <div class="formdiv col-md-12">
+                   
+                    <form class="from1" style="margin-left: 10%; margin-right: 10%;" onsubmit="return validation()">
+                        <div >
+                            <input class="form-control p-2 mt-2" id="fname" type="text" placeholder="First Name">
+                            <span id="name" style="color: red;"></span>
+                        </div>
+                        <div>
+                           
+                            <input class="form-control p-2 mt-2" id="lname" type="text" placeholder="Last Name">
+                            <span id="namelast" style="color: red;"></span>
+                        </div>
+                        <div>
+                          
+                            <input class="form-control p-2 mt-2" id="email" type="email" placeholder="Email">
+                            <span id="emailerror" style="color: red;"></span>
+                        </div>
+                        <div>
+                            
+                            <input class="form-control p-2 mt-2" id="password" type="password" placeholder="Password">
+                            <span id="passerror" style="color: red;"></span>
+                        </div>
+
+                        <div>
+                            
+                            <input class="form-control p-2 mt-2" id="cpassword" type="password" placeholder="Confirm Password">
+                            <span id="cpasserror" style="color: red; "></span>
+                        </div>
+                        <div>
+              
+                            <input class="form-control p-2 mt-2" id="mobile" type="tel" placeholder=" Mobile No ">
+                            <span id="mobileerror" style="color: red; "></span>
+                        </div>
+                        <div>
+                           
+                            <input class="form-control p-2 mt-2" id="dob" type="date" placeholder="Date of birth">
+                        </div>
+
+
+                        <div>
+                           
+                            <input class="form-control p-2 mt-2" id="hobbies" type="text" placeholder="Hobbies">
+                        </div>
+                        <div class="mt-2">
+                            <label for="gender">Gender </label>
+                            <label for="gender">Male </label>
+                            <input type="radio" name="gender ">
+                            <label for="gender">Female </label>
+                            <input type="radio" name="gender ">
+                            <label for="gender">Other</label>
+                            <input type="radio" name="gender">
+                        </div>
+        
+                            <select class="form-control" >
+                        <option value="first"> Education Details</option>
+                        <option value="first">Primary Education</option>
+                        <option value="second">Higher Education</option>
+                        <option value="ug">Under Graduate</option>
+                    </select>
+                            <textarea class="form-control mt-2" name="address" id=" " cols="20" rows="1" placeholder="Address"></textarea>
+                        <button  type="submit" class="btn btn-primary mt-2">Submit</button>
+                        <button  type="reset" class="btn btn-primary mt-2">Reset</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <hr>
+        <div class="row ">
+            <p class="imgtitle ">Online Regular classes</p>
+
+            <div class="col-md-3 fik inner">
+                <a href=" ">
+                    <img src="5.jpg" alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 5 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="6.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 6 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="7.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 7 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="8.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 8 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="9.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 9 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="10.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 10 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="11.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 11 Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="12.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Class 12 Tution</span>
+                </a>
+            </div>
+
+
+        </div>
+        <hr style="color: rgb(15, 14, 14); ">
+
+        <!-- ------------------------------special  classes----------------------------------- -->
+
+        <div class="row ">
+
+            <p class="imgtitle"> Special classes</p>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="math.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Mathematics Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="sci.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Science Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="his.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">History Tution</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="eng.png " alt=" " class="imgall "><br>
+                    <span class="textimg ">English Tution</span>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- --------------------------------activity classes--------------------- -->
+
+
+
+        <div class="row ">
+
+            <p class="imgtitle "> Activity classes</p>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="dance.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Dance</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="cooking.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Cooking</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="art.jpg " alt=" " class="imgall "><br>
+                    <span class="textimg ">Drawing</span>
+                </a>
+            </div>
+            <div class="col-md-3 inner">
+                <a href=" ">
+                    <img src="singing.jpg.crdownload " alt=" " class="imgall "><br>
+                    <span class="textimg ">Singing</span>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- -------------------------------------about us----------------------------- -->
+    </div>
+
+<br>
+    <div class="workSections text-center">
+        <div class="row">
+
+       <h4>How UrbanPro Works?</h4>
+       <br><br>
+    <div class="col-md-4">
+        <div class="howWorkBlock">
+            <img src="https://c.urbanpro.com/assets/emailer/CalendarNew-f66c9df8db9feeb32d3fb1bf694755d8.png" class="" width="100" height="100" alt="">
+            <p class="hwTitle"><span class="mobStepNum">1</span> <span>Book a Demo</span></p>
+            <p class="hwDesc">Book a Free Demo Class with a Tutor.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="howWorkBlock">
+            <img src="https://c.urbanpro.com/assets/emailer/liveDemoNew-f6b63711063db96eae6b716ceaa9883f.png" class="" width="100" height="100" alt="">
+            <p class="hwTitle"><span class="mobStepNum">2</span> <span>Join LIVE Demo Class</span></p>
+            <p class="hwDesc">Attend the Demo class as scheduled.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="howWorkBlock">
+            <img src="https://c.urbanpro.com/assets/emailer/securpay3New-4ef2509ab88e9371d418b1413a25c288.png" class="" width="100" height="100" alt="">
+            <p class="hwTitle"><span class="mobStepNum">3</span> <span>Pay and Start</span></p>
+            <p class="hwDesc">Use UrbanPro SecurePay to pay and start your Classes.</p>
+        </div>
+    </div>
+    </div>
+    
+    <br><br>    
+        <hr>
+      
+    </div>
+  
+    </div>
+    <div>
+        
+    </div>
+    <div class="elementor-text-editor elementor-clearfix text-center bg-dark text-white"><p>Copyright © 2021 Urban-Pro</p></div>
+    <div class="card text-center">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Thanks for being here</h5>
+          <p class="card-text">Urban-Pro family always welcome you .</p>
+          <a href="#" class="btn btn-primary">Go Up</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+</div>
+</body>
+
+</html>

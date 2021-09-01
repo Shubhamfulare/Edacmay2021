@@ -1,0 +1,83 @@
+.theme {
+    position: relative;
+    color: black;
+    padding: 20px;
+    height: 60px;
+    width: "100%";
+    left: 35%;
+}
+
+.background {
+    border-radius: 20px;
+}
+
+.pencil {
+    position: absolute;
+    top: 164px;
+    width: 70%;
+    height: 100%;
+    bottom: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    width: 10%;
+    left: 20%;
+}
+
+.menu {
+    background-color: red;
+}
+
+.navbar {
+    position: absolute;
+    list-style-type: none;
+    top: 109px;
+    background-color: black;
+    width: 99%;
+    border-radius: 50px;
+}
+
+.navbar li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    display: inline;
+    top: 70px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px 30px 100px;
+}
+
+.log {
+    background-color: rgb(34, 38, 142);
+    width: 15%;
+    padding: 9px 165px 0px 39px;
+    top: 235px;
+    left: 850px;
+}
+
+.form {
+    position: absolute;
+    top: 235px;
+    left: 850px;
+}
+
+.log input {
+    display: flex;
+}
+
+.learning {
+    width: 16%;
+    height: 35%;
+    top: 251px;
+    position: absolute;
+    left: 348px;
+    background-color: red;
+    padding: -5px 31px;
+    border-radius: 130px;
+}
